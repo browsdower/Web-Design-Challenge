@@ -4,7 +4,7 @@ body{
 }
 /* Navbar */
 .navbar{
-    max-height: 57px; 
+    max-height: 100px; 
 }
 .navigation .navbar-brand{
     color: white; 
