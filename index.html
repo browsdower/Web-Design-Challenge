@@ -6,9 +6,11 @@
   <meta charset="UTF-8">
   <title>Latitude Visualization</title>
   
+  <!-- Bootstrap code -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
   crossorigin="anonymous">
 
+  <!--styles link-->
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -22,11 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item active" href="wind.html">Wind Speed</a>   
                 <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                 <a class="dropdown-item" href="humidity.html">Humidity</a>
@@ -58,18 +60,32 @@
           </div>
         <div class="col-lg-5 col-md-12">
           <div class="box">
-            <h4 class="title"?>Visualization</h4>
+            <h3 class="title">Visualizations</h3>
             <div class="container">
-              <div class="row">
-                <div class="col-20">
-                  <a href="temp.html"> <img src = "Resources/assets/images/Fig1.png" width="50" height="50"></a>
-                  <a href="humidity.html"> <img src = "Resources/assets/images/Fig2.png"width="150" height="150"></a>
-                  <a href="cloudiness.html"> <img src = "Resources/assets/images/Fig3.png"width="150" height="150"></a>
-                  <a href="wind.html"> <img src = "Resources/assets/images/Fig4.png"width="150" height="150"></a> "
+              <div class="row" style="padding-bottom: 30px;">
+                <div class="col-6">
+                  <a href="temp.html">
+                    <img class="panel active" src="Resources/assets/images/Fig1.png" alt="Max Temperature Image">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="humidity.html">
+                    <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
+                  </a>
                 </div>
               </div>
-            </div>
-          </div>
+  
+              <div class="row" style="padding-bottom: 30px;">
+                <div class="col-6">
+                  <a href="cloudiness.html">
+                    <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="wind.html">
+                    <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+                  </a>
+                </div>
         </div>
         </div>
       </div>
